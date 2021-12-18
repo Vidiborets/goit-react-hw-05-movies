@@ -1,0 +1,22 @@
+.navigation {
+  display: flex;
+}
+.link {
+  text-decoration: none;
+  padding: 20px;
+  font-weight: 500;
+  color: grey;
+  font-size: 26px;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+  &:hover {
+    color: #ff6b01;
+  }
+}
+.active {
+  composes: link;
+  color: #ff6b01;
+}
